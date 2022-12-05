@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": ["plugin:react/recommended", "airbnb"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "globals": {
+        "JSX": true
+    },
+    "rules": {
+        "jsx-a11y/control-has-associated-label": "off",
+        "react/jsx-indent-props": "off",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "react/no-array-index-key": "off",
+        "no-console": "off",
+        "no-param-reassign": "off",
+        "max-len": "off",
+        "camelcase": "off",
+        "linebreak-style": ["error", "windows"],
+        "react/jsx-filename-extension": [0],
+        "no-plusplus": "off",
+        "react/function-component-definition": [
+            2,
+            { "namedComponents": "arrow-function" }
+        ],
+        "indent": ["error", 4],
+        "react/jsx-indent": ["error", 4],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    }
+}
