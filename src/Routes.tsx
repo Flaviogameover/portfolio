@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-    BrowserRouter as Router, Routes, Route,
+    HashRouter as Router, Routes, Route,
 } from 'react-router-dom';
 import Home from './pages/Home';
 import Thanks from './pages/Thanks';
 import Footer from './components/Footer';
 
 const MainRoute:React.FC = () => (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename="/">
         <main>
             <Routes>
                 <Route path="/" element={<Home />} />

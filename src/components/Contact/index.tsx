@@ -9,7 +9,7 @@ const Contact: ()=> JSX.Element = () => (
                 <input name="name" type="text" placeholder="Seu nome..." />
             </label>
             <input type="hidden" name="_subject" value="Contato Portfólio" />
-            <input type="hidden" name="_next" value="https://flaviogameover.github.io/portfolio/thanks" />
+            <input type="hidden" name="_next" value="https://flaviogameover.github.io/#/thanks" />
             <label htmlFor="email">
                 E-mail
                 <input name="email" type="email" placeholder="Seu E-mail..." required />
