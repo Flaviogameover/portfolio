@@ -82,7 +82,6 @@ header {
 
 header a {
     text-decoration: none;
-    
 }
 
 header h1 {
@@ -366,8 +365,6 @@ section.projects {
     scale: 1.2;
 }
 
-
-
 /*----------------------------Skills---------------------*/
 
 section.skills {
@@ -561,7 +558,7 @@ footer span {
     body {
         background: #b6b6b6;
     }
-    
+
     section.display {
         background: linear-gradient(
             180deg,
@@ -576,7 +573,7 @@ footer span {
     header .nav-desktop {
         display: none;
     }
-    
+
     header .nav-mobile {
         display: block;
     }
@@ -614,7 +611,6 @@ footer span {
     .project {
         height: 450px;
     }
-
 }
 
 @media screen and (max-width: 768px) {

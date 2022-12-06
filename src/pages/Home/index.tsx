@@ -176,6 +176,7 @@ const Home:React.FC = () => {
             window.removeEventListener('scroll', showArrow);
         };
     }, []);
+
     return (
         <>
             <Header />
