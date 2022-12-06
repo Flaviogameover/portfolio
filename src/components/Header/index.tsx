@@ -1,10 +1,13 @@
 import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 import { scrollTo, showDropdown } from '../utils/functions';
 
 const Header: () => JSX.Element = () => (
     <header id="header">
-        <h1>{'<Portfólio>'}</h1>
+        <Link to="/" className="logo">
+            <h1>{'<Portfólio>'}</h1>
+        </Link>
         <nav className="nav-desktop">
             <ul>
                 <li>

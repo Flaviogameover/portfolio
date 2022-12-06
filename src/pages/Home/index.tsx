@@ -9,17 +9,17 @@ import {
 } from 'react-icons/fa';
 import { SiMysql, SiTypescript } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
-import { scrollTo, showArrow } from './components/utils/functions';
-import Header from './components/Header';
-import Display from './components/Display';
-import './App.css';
-import Projects from './components/Projects';
-import { ISkill, IProject } from './components/interface';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { scrollTo, showArrow } from '../../components/utils/functions';
+import Display from '../../components/Display';
+import Projects from '../../components/Projects';
+import { ISkill, IProject } from '../../components/interface';
+import Skills from '../../components/Skills';
+import Contact from '../../components/Contact';
+import Header from '../../components/Header';
 
-const App:React.FC = () => {
+import './index.css';
+
+const Home:React.FC = () => {
     const [skills] = useState<ISkill[]>([
         { id: 1, name: 'HTML', icon: <FaHtml5 /> },
         { id: 2, name: 'CSS', icon: <FaCss3Alt /> },
@@ -176,20 +176,17 @@ const App:React.FC = () => {
             window.removeEventListener('scroll', showArrow);
         };
     }, []);
-
     return (
-
-        <main>
+        <>
+            <Header />
             <button className="arrow" type="button" id="arrow" onClick={() => scrollTo('')}>
                 <AiOutlineArrowUp />
             </button>
-            <Header />
             <Display />
             <Projects projects={projects} />
             <Skills skills={skills} />
             <Contact />
-            <Footer />
-        </main>
+        </>
     );
 };
-export default App;
+export default Home;
