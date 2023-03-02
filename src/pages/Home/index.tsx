@@ -162,11 +162,17 @@ const Home:React.FC = () => {
         },
         {
             id: 5,
-            title: 'Movie DB',
-            tech: 'HTML, CSS, Typescript, API, NodeJS, MongoDB',
-            description: 'Veja informações detalhadas sobre os filmes e séries além de poder criar sua própria lista de favoritos.',
-            image: 'https://i.imgur.com/3uX2NDP.png',
-            links: [],
+            title: 'Reddit Clone',
+            tech: 'Typescript, NextJS, Firebase, API',
+            description: 'Clone do fórum Reddit e algumas de suas funcionalidades como criar comunidades, postar informações e comentá-las!',
+            image: 'https://i.imgur.com/4cSSc0K.png',
+            links: [
+                {
+                    id: 1,
+                    url: 'https://flaviogameover-reddit-clone.vercel.app/',
+                    icon: <AiOutlineLink />,
+                },
+            ],
         },
     ]);
 
