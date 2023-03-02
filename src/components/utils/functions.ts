@@ -2,10 +2,13 @@ const scrollTo = (id:string):void => {
     const element = document.getElementById(id) as HTMLElement;
     const dropdown = document.getElementById('dropdown') as HTMLElement;
     if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        const yOffset = -60; 
+        const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        element.scrollTo({top:y, behavior: 'smooth' });
         dropdown.style.display = 'none';
     } else {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo(window.scrollX, window.scrollY + 50);
     }
 };
 
